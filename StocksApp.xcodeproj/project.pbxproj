@@ -11,6 +11,11 @@
 		F472DCA028CF4A69003144C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F472DC9F28CF4A69003144C0 /* ContentView.swift */; };
 		F472DCA228CF4A6D003144C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F472DCA128CF4A6D003144C0 /* Assets.xcassets */; };
 		F472DCA528CF4A6D003144C0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F472DCA428CF4A6D003144C0 /* Preview Assets.xcassets */; };
+		F472DCAE28CF4AF8003144C0 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F472DCAD28CF4AF8003144C0 /* Stock.swift */; };
+		F472DCB128CF4B43003144C0 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = F472DCB028CF4B43003144C0 /* Webservice.swift */; };
+		F472DCB428CF4D2C003144C0 /* StockListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F472DCB328CF4D2C003144C0 /* StockListViewModel.swift */; };
+		F472DCB728CF4DE9003144C0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F472DCB628CF4DE9003144C0 /* Constants.swift */; };
+		F472DCBA28CF57EC003144C0 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F472DCB928CF57EC003144C0 /* Double+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +25,11 @@
 		F472DCA128CF4A6D003144C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F472DCA428CF4A6D003144C0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F472DCA628CF4A6D003144C0 /* StocksApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StocksApp.entitlements; sourceTree = "<group>"; };
+		F472DCAD28CF4AF8003144C0 /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
+		F472DCB028CF4B43003144C0 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		F472DCB328CF4D2C003144C0 /* StockListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListViewModel.swift; sourceTree = "<group>"; };
+		F472DCB628CF4DE9003144C0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F472DCB928CF57EC003144C0 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +46,7 @@
 		F472DC9128CF4A69003144C0 = {
 			isa = PBXGroup;
 			children = (
+				F472DCB828CF57D1003144C0 /* Extensions */,
 				F472DC9C28CF4A69003144C0 /* StocksApp */,
 				F472DC9B28CF4A69003144C0 /* Products */,
 			);
@@ -52,6 +63,10 @@
 		F472DC9C28CF4A69003144C0 /* StocksApp */ = {
 			isa = PBXGroup;
 			children = (
+				F472DCB528CF4DD6003144C0 /* Utils */,
+				F472DCB228CF4D16003144C0 /* View Models */,
+				F472DCAF28CF4B32003144C0 /* Services */,
+				F472DCAC28CF4A7D003144C0 /* Models */,
 				F472DC9D28CF4A69003144C0 /* StocksAppApp.swift */,
 				F472DC9F28CF4A69003144C0 /* ContentView.swift */,
 				F472DCA128CF4A6D003144C0 /* Assets.xcassets */,
@@ -67,6 +82,46 @@
 				F472DCA428CF4A6D003144C0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F472DCAC28CF4A7D003144C0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F472DCAD28CF4AF8003144C0 /* Stock.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F472DCAF28CF4B32003144C0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F472DCB028CF4B43003144C0 /* Webservice.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F472DCB228CF4D16003144C0 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				F472DCB328CF4D2C003144C0 /* StockListViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		F472DCB528CF4DD6003144C0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F472DCB628CF4DE9003144C0 /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F472DCB828CF57D1003144C0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F472DCB928CF57EC003144C0 /* Double+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +196,11 @@
 			files = (
 				F472DCA028CF4A69003144C0 /* ContentView.swift in Sources */,
 				F472DC9E28CF4A69003144C0 /* StocksAppApp.swift in Sources */,
+				F472DCBA28CF57EC003144C0 /* Double+Extensions.swift in Sources */,
+				F472DCB128CF4B43003144C0 /* Webservice.swift in Sources */,
+				F472DCAE28CF4AF8003144C0 /* Stock.swift in Sources */,
+				F472DCB428CF4D2C003144C0 /* StockListViewModel.swift in Sources */,
+				F472DCB728CF4DE9003144C0 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
